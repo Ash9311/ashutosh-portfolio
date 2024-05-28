@@ -40,7 +40,7 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          <Wrapper>
+          <Wrapper style={{ paddingBottom: "3rem" }}>
 
             <Projects openModal={openModal} setOpenModal={setOpenModal} />
             <Education />
@@ -48,6 +48,7 @@ function App() {
           {/* <Wrapper>
             <Contact />
           </Wrapper> */}
+
           <Footer />
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
